@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_background"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/tvHeadingResult"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/your_results"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvResult"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/tvHeadingResult"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="@color/custom_card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/tvResultStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+
+                android:text="@string/normal"
+                android:textAlignment="center"
+                android:textColor="@color/custom_green"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvResultStatus"
+                android:layout_marginTop="20dp"
+                android:text="@string/_18_0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResultString"
+                android:layout_width="match_parent"
+                android:paddingTop="30dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvResult"
+                android:text="@string/your_result_is_nice_af"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnRecalculate"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:layout_below="@id/cvResult"
+        android:layout_marginHorizontal="15dp"
+
+        android:layout_marginTop="110dp"
+        android:backgroundTint="@color/custom_blue"
+        android:text="@string/recalculate"
+        android:textAllCaps="true" />
+</RelativeLayout>

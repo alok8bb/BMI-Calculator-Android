@@ -6,8 +6,9 @@
 Design By - [Ruben Vaalt]("https://dribbble.com/shots/4585382-Simple-BMI-Calculator")
 
 # Todo -
-- [ ] Implement Result Page
+- [x] Implement Result Page
+- [ ] Fix Images in Dark Theme
 - [ ] Optimize MainActivity.kt
 - [ ] Add Splash Screen
-- [ ] Fix Dark Theme
+- [x] Fix Dark Theme
 - [ ] Add Screenshots

@@ -102,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:text="Height"
+                android:text="@string/height"
                 android:textAllCaps="true"
                 android:textColor="@color/custom_unselected"
                 android:textSize="20sp" />
@@ -118,7 +118,7 @@
                     android:id="@+id/tvHeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="180"
+                    android:text="@string/_180"
                     android:textColor="@color/white"
                     android:textSize="50sp"
                     android:textStyle="bold" />
@@ -127,7 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
-                    android:text="cm"
+                    android:text="@string/cm"
                     android:textColor="@color/custom_unselected"
                     android:textSize="20sp" />
 
@@ -139,7 +139,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/lyHeight"
                 android:layout_marginHorizontal="10dp"
-                android:stepSize="1"
                 android:value="180.00"
                 android:valueFrom="30.00"
                 android:valueTo="200.00"
@@ -178,7 +177,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
-                    android:text="Weight"
+                    android:text="@string/weight"
                     android:textAllCaps="true"
                     android:textColor="@color/custom_unselected"
                     android:textSize="20sp" />
@@ -194,7 +193,7 @@
                         android:id="@+id/tvWeight"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="60"
+                        android:text="@string/_60"
                         android:textColor="@color/white"
                         android:textSize="50sp"
                         android:textStyle="bold" />
@@ -203,7 +202,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="2dp"
-                        android:text="kg"
+                        android:text="@string/kg"
                         android:textColor="@color/custom_unselected"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -220,13 +219,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="30dp"
                         android:layout_marginEnd="15dp"
+                        android:contentDescription="@string/todo"
                         android:src="@drawable/ic_baseline_remove_24" />
 
                     <com.google.android.material.floatingactionbutton.FloatingActionButton
                         android:id="@+id/btnIncWeight"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_add_24" />
+                        android:src="@drawable/ic_baseline_add_24"
+                        android:contentDescription="@string/todo" />
                 </LinearLayout>
 
             </RelativeLayout>
@@ -250,7 +251,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
-                    android:text="Age"
+                    android:text="@string/age"
                     android:textAllCaps="true"
                     android:textColor="@color/custom_unselected"
                     android:textSize="20sp" />
@@ -261,7 +262,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tvHeadingAge"
                     android:layout_centerHorizontal="true"
-                    android:text="20"
+                    android:text="@string/_20"
                     android:textColor="@color/white"
                     android:textSize="50sp"
                     android:textStyle="bold" />
@@ -278,13 +279,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="30dp"
                         android:layout_marginEnd="15dp"
-                        android:src="@drawable/ic_baseline_remove_24" />
+                        android:src="@drawable/ic_baseline_remove_24"
+                        android:contentDescription="@string/todo" />
 
                     <com.google.android.material.floatingactionbutton.FloatingActionButton
                         android:id="@+id/btnIncAge"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_add_24" />
+                        android:src="@drawable/ic_baseline_add_24"
+                        android:contentDescription="@string/todo" />
                 </LinearLayout>
 
             </RelativeLayout>
@@ -295,6 +298,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_below="@id/lyDetails"

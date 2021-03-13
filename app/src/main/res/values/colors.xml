@@ -16,4 +16,6 @@
     <color name="custom_unselected">#B4B5C3</color>
     <color name="custom_blue">#0075FF</color>
     <color name="custom_floating_button">#222747</color>
+    <color name="custom_green">#2FD770</color>
+    <color name="custom_red">#e32636</color>
 </resources>
