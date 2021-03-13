@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BMI Calc</string>
+    <string name="submit">Submit</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+</resources>
