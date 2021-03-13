@@ -8,3 +8,4 @@ Design By - [Ruben Vaalt]("https://dribbble.com/shots/4585382-Simple-BMI-Calcula
 - [ ] Optimize MainActivity.kt
 - [ ] Add Splash Screen
 - [ ] Fix Dark Theme
+- [ ] Add Screenshots
